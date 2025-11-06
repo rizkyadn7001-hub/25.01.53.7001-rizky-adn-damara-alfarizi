@@ -1,0 +1,7 @@
+AcceptPathInfo On
+RewriteEngine On
+RewriteBase /canteen/backend/
+# route everything to api.php if not real file/dir
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ api.php/$1 [L,QSA]

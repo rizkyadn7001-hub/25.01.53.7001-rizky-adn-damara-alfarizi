@@ -1,0 +1,8 @@
+{
+  "name": "canteen/backend",
+  "require": {
+    "mevdschee/php-crud-api": "^2.14"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
